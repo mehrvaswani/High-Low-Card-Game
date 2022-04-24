@@ -1,0 +1,117 @@
+<!-- This file is accessible from index.HTML, links to style.CSS for styling
+  and scripts.js for interactivity. 
+  
+  It lays the structure and placeholders for the main game and uses 
+  DOM manipulation to display updates-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- The header contains html details, links to the css, 
+and the beginning segment of the layout including the
+title, deck control, and scoreboard -->
+<header>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>Hi-Lo Card Game</title>
+
+  <link href="style.css" rel="stylesheet" />
+
+  <h1>Hi-Lo Card Game</h1>
+
+<!-- We divide sections by using div and associated class and id to tag
+the elements in the css. I choose radio buttons instead of drop downs 
+because there are only 2 options as opposed to more 
+and radio inputs to indicate that users can only select one option.  -->
+
+  <div class="flex-parent">
+
+    <div id="settings" class="settings">
+      <p>Settings</p>
+      <input type="radio" id="FD" name="only1" checked=true>
+      <label for="FD">Full Deck</label><br>
+      <input type="radio" id="HD" name="only1">
+      <label for="HD">Hearts Deck</label><br>
+    </div>
+
+    <div id="scoreboard" class="top">
+      <!-- I use a simple table with headers on the first row and first column
+      to display the cards drawn, game score and high score for each deck -->
+      <table>
+        <tr>
+          <th> Deck</th>
+          <th align="left" id="title" class="scoreboardtitle"></th>
+
+          <th> Guesses</th>
+          <th align="center" id="title" class="scoreboardtitle"></th>
+
+          <th> Score</th>
+          <th align="right" id="title" class="scoreboardtitle"></th>
+
+          <th> High Score</th>
+          <th align="right" id="title" class="scoreboardtitle"></th>
+        </tr>
+        <br>
+        <tr>
+          <td> Full Deck</td>
+          <td align="left" id="FDdeck"></td>
+          <td></td>
+          <td align="left" id="FDguess"></td>
+          <td></td>
+          <td align="right" id="FDscore"></td>
+          <td></td>
+          <td align="right" id="FDhighscore"></td>
+        </tr>
+        <tr>
+          <td> Hearts Deck</td>
+          <td align="left" id="HDdeck"></td>
+          <td></td>
+          <td align="center" id="HDguess"></td>
+          <td></td>
+          <td align="right" id="HDscore"></td>
+          <td></td>
+          <td align="right" id="HDhighscore"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+<!-- Another set of buttons 'New Game' and 'Exit Game' are placed above the main game play for convenient access at all times.  -->
+  <div class="quitctrl">
+    <button class="new" id="newgame"> New Game </button>
+    <button class="quit" id="quitGame"> Quit Game </button>
+  </div>
+
+</header>
+
+<body>
+<!--  base card is placed under the top-facing card to indicate a deck under. 
+  The main playing buttons are placed in close proximity to the right of the card display 
+  for fast access to controls with minimal cursor movement. The buttons are sized and 
+  spread evenly in a column. They are styled in CSS equipped with a hover animation 
+  as a perceptible cue to the player to click on it.  -->
+  <div class="DeckContainer" id="Container">
+    <div class="layer">
+      <div class="cards">
+        <img src="base.jpg" class="basecard">
+        <img src="" id="top" class="topcard">
+      </div>
+
+      <div id="buttons" class="controls">
+        <button id="higher"> Higher </button>
+        <button id="lower"> Lower </button>
+        <button id="skip"> Skip Card </button>
+        <button id="shuffle"> Shuffle Deck</button>
+        <button id="hint"> Hint</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="root"></div>
+  <!-- link to main JS file -->
+  <script src="scripts.js">al</script> 
+</body>
+
+</html>

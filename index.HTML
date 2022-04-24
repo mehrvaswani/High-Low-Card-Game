@@ -1,0 +1,31 @@
+<!-- This file is a basic HTML for the starting point for the game.
+  It contains the game's instructions for the player
+  allows them to enter the game. It links to the main game via game.HTML and shares
+  a style.CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>Hi-Lo Card Game</title>
+
+  <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <h1>Hi-Lo Card Game</h1>
+
+  <div class="instr">
+    <p class="intro">In the Hi-Lo Card Game you are presented with a card with a number value between 1 (ACE) and 13
+      (KING). You must guess whether the next card drawn will be <b>Higher</b> or <b>Lower</b> than the previous one.
+    </p>
+    <input type="button" onclick="location.href='game.HTML';" class="button" value="Play">
+  </div>
+
+</body>
+
+</html>

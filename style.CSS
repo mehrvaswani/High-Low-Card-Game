@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Martel:200,400,600');
+* {
+  box-sizing: border-box;
+}
+
+.instr{
+	margin: 10px 0 30px;
+  text-align: center;
+  font-size: 11px;
+  font-family: sans-serif;
+  color: #eee;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+body {
+	font: normal 0.875em 'Martel', serif;
+  font-weight: 400;
+  background-color: #78909C;
+  margin: auto;
+  padding: 20px 20px 0 20px;
+  margin-bottom: ;
+  max-width: 700px;
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+h1 {
+	margin-top: 0;
+  text-align: center;
+	color: white;
+	font-size: 50pt;
+	font-weight: 100;
+	margin-bottom: 0;
+	padding-bottom: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.intro {
+  font-size: 14px;
+  width: 660px;
+  text-align: center;
+}
+
+.flex-parent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%
+}
+
+.settings {
+flex:1;
+background-color: #c1d1da;
+border-radius: 10px;
+height: 125px;
+width: 280px;
+padding-bottom: 20px;
+box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
+}
+
+.settings input[type=radio] {
+  height: 12px;
+  width: 12px;
+  margin: 0 0 10px 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.settings label{
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.settings p {
+  display: block;
+  margin-left: 20px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+
+}
+
+.top{
+  margin-left: 10px;
+  background-color: rgb(226, 181, 113);
+  color: #fff;
+  padding-left:20px;
+  border-radius: 10px;
+  width: 430px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
+}
+
+td {
+  padding: 5px;
+}
+
+th {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  padding-bottom: 5px;
+}
+
+.DeckContainer {
+  display:none;
+  margin-top: 70px;
+  position:relative;
+  background-color: white;
+  padding: 30px 30px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  height: 370px;
+  max-height: 100%;
+  max-width: 100%;  
+  margin-bottom: 15px;
+}
+
+.layer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%
+}
+
+.cards{
+  flex:1;
+  padding-left:150px;
+
+}
+
+.topcard{
+  position: absolute;
+  padding-left:10px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 10px; 
+}
+
+.basecard {
+  position: absolute;
+  display: inline-block;
+  margin: auto;
+  border-radius: 10px;
+  height: 305px;
+  width: 220px; 
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0.2, 0); 
+}
+
+.topcard:nth-of-type(n) {
+  transform: translateX(-30%) rotate(-10deg);
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0.2, 0); 
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin: auto;
+  width: 160px;
+  height: 280px;
+}
+
+button {
+  font: inherit;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background: #78909C;
+  box-shadow: 0px 3px 0px 0px #546E7A;
+}
+
+.button {
+  font: inherit;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+  color: #fff;
+  line-height: 1;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background: rgb(226, 181, 113);
+  box-shadow: 0px 3px 0px 0px rgb(155, 106, 32);
+}
+
+button:active,
+button:hover {
+  transition-duration: 0.3s;
+		outline: none;
+		background-color: #d1c3c357;
+    color: black;
+}
+
+.quit {
+  float: right;   
+  width:120px;
+  background: #f32121;
+  box-shadow: 0px 3px 0px 0px #d1c3c357;
+  padding: 15px 15px 15px;
+  margin: 10px 10px 10px 0;
+    
+  }
+
+  .new {
+    position: absolute;
+    width:120px;
+    background: #d8d511;
+    box-shadow: 0px 3px 0px 0px #d1c3c357;
+    padding: 15px 15px 15px;
+    margin: 10px 10px 10px 0;
+  }
+
+
+
+
+
+
+  
